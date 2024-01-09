@@ -17,12 +17,14 @@ const titleCased = () => {
 
 
 function titleCased(first) {
-  let cap = tutorials.map((first) => first.split(" "));
-  console.log(first.split(""));
-  return first
-  .split("")
-  .map ((word) => word[0].toUpperCase() + word.substring(1))
-  .join(" ");
-};
-return cap;
-
+  let cap = tutorials.map((first) => {
+    first.split(" ");
+    console.log(first.split(""));
+    return first
+    .split("")
+    .map ((word) => word[0].toUpperCase() + word.substring(1))
+    .join(" ");
+  });
+  return cap;
+}
+  
